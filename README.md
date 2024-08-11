@@ -83,4 +83,4 @@ For any questions or support, please reach out to [zahrasafdari8181@gmail.com](m
 
 ---
 
-Thank you for exploring this project! We hope you find it useful for your time series forecasting needs.
+Thank you for exploring this project!
