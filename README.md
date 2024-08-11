@@ -32,7 +32,7 @@ pip install numpy pandas matplotlib tensorflow scikit-learn
 
 ### 2. Data Preparation
 
-
+The data used in this project is also available at the [Big Data Lab repository](https://github.com/big-data-lab-umbc/sea-ice-prediction/tree/main/climate-change-ai-workshop/data).
 Ensure your data files are in the `data` directory:
 - `dailyt30_features.npy`
 - `monthly_features.npy`
@@ -48,11 +48,6 @@ The model is defined in the `build_model` function, which creates a hybrid archi
 - **Compiling** the model with the Adam optimizer and mean squared error loss.
 - **Fitting** the model with early stopping and model checkpoint callbacks to save the best-performing model.
 
-Run the training script:
-
-```python
-python train_model.py
-```
 
 ### 4. Evaluation and Visualization
 
@@ -68,14 +63,6 @@ After training, the script evaluates the model's performance and generates visua
 - **Training and Callbacks:** Includes early stopping and model checkpoint mechanisms.
 - **Visualization:** Plots training history and prediction accuracy.
 
-## Example Usage
-
-Here's a brief overview of how to use the provided code:
-
-1. **Load and preprocess your data** using the script.
-2. **Build and compile the model** with the `build_model` function.
-3. **Train the model** using the `fit` method with appropriate callbacks.
-4. **Evaluate and visualize** the results with provided plotting functions.
 
 ## Results
 
