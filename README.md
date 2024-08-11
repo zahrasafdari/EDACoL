@@ -1,4 +1,4 @@
-# Time Series Forecasting with Advanced Neural Networks
+# Advanced Predictive Modeling using CNN-LSTM with Attention Layers
 
 Welcome to the Time Series Forecasting project! This repository contains a deep learning-based solution for time series forecasting, leveraging advanced neural network architectures to make accurate predictions. The following guide will help you understand how to get started, how the model is structured, and how to use the provided code effectively.
 
