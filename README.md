@@ -81,7 +81,6 @@ Here's a brief overview of how to use the provided code:
 ## Results
 
 | Models | Test RMSE | Test NRMSE | Test R² score |
-|----------|----------|----------|
 | Advanced Predictive Modeling using CNN-LSTM with Attention Layers | 787587.2290286897 | 0.06512203253398433 | 0.9417413782967358 |
 | Sea Ice Forecasting using Attention-based Ensemble LSTM | 818216.643 | 0.07439222975414471 | 0.940 |
 
