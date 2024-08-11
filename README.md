@@ -1,10 +1,8 @@
 # Advanced Predictive Modeling using CNN-LSTM with Attention Layers
 
-Welcome to the Time Series Forecasting project! This repository contains a deep learning-based solution for time series forecasting, leveraging advanced neural network architectures to make accurate predictions. The following guide will help you understand how to get started, how the model is structured, and how to use the provided code effectively.
+Welcome to the Polar Sea Ice Forecasting project! This repository contains a deep learning-based solution for Polar Sea Ice forecasting, leveraging advanced neural network architectures to make accurate predictions. The following guide will help you understand how to get started, how the model is structured, and how to use the provided code effectively.
 
-## Project Overview
-
-This project employs a sophisticated neural network model that integrates Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and Transformer-based layers to forecast time series data. It is designed to handle both daily and monthly data features, preprocessing them to build a robust forecasting model.
+This project builds upon the primary sea ice prediction model developed by the Big Data Lab at UMBC, known as "[Sea Ice Forecasting using Attention-based Ensemble LSTM](https://github.com/big-data-lab-umbc/sea-ice-prediction/tree/main/climate-change-ai-workshop)" My work aims to enhance this foundational model by incorporating advanced techniques, seeking to improve its predictive accuracy and overall performance.
 
 ## Key Features
 
@@ -33,6 +31,7 @@ pip install numpy pandas matplotlib tensorflow scikit-learn
 ```
 
 ### 2. Data Preparation
+
 
 Ensure your data files are in the `data` directory:
 - `dailyt30_features.npy`
