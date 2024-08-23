@@ -1,4 +1,4 @@
-# Advanced Predictive Modeling using CNN-LSTM with Attention Layers
+# EDACoL: An Enhanced Dual-Attention ConvLSTM Model 
 
 Welcome to the Polar Sea Ice Forecasting project! This repository contains a deep learning-based solution for Polar Sea Ice forecasting, leveraging advanced neural network architectures to make accurate predictions. The following guide will help you understand how to get started, how the model is structured, and how to use the provided code effectively.
 
