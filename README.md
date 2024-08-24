@@ -4,12 +4,33 @@ Welcome to the Polar Sea Ice Forecasting project! This repository contains a dee
 
 This project builds upon the primary sea ice prediction model developed by the Big Data Lab at UMBC, known as "[Sea Ice Forecasting using Attention-based Ensemble LSTM](https://github.com/big-data-lab-umbc/sea-ice-prediction/tree/main/climate-change-ai-workshop)" My work aims to enhance this foundational model by incorporating advanced techniques, seeking to improve its predictive accuracy and overall performance.
 
-## Key Features
+## Model Architecture
 
-- **Data Handling:** Efficient loading and preprocessing of time series data.
-- **Model Architecture:** A hybrid model combining CNN, LSTM, and Multi-head Attention layers for improved forecasting performance.
-- **Training and Evaluation:** Includes callbacks for early stopping and saving the best model to prevent overfitting.
-- **Visualization:** Plots for training history and comparison of predictions with actual values.
+The sea ice prediction model is designed using a hybrid architecture that combines convolutional layers, attention mechanisms, and LSTM networks. Below is a concise description of the model components:
+
+### 1. Inputs
+- **Model 1 Input**: Processes 30 days of daily climate data.
+- **Model 2 Input**: Processes 1 day of monthly climate data.
+
+### 2. Model 1: Daily Data Processing
+- **Conv1D Layer**: Extracts spatial features from the daily data.
+- **Multi-Head Attention Layer**: Captures long-range dependencies within the daily data sequence.
+- **LSTM Layers**: Learn and retain temporal patterns across the daily data.
+- **Global Average Pooling**: Reduces the LSTM output to a fixed-size vector.
+- **Dense Layer**: Refines the extracted features before output.
+
+### 3. Model 2: Monthly Data Processing
+- **Conv1D, Multi-Head Attention, LSTM, Global Average Pooling, and Dense Layers**: Structured similarly to Model 1 but adapted for the monthly data input.
+
+### 4. Ensemble
+- **Concatenation**: Combines the outputs from Model 1 and Model 2.
+- **Dense Layers**: Further process the combined data to generate the final prediction.
+
+### 5. Model Compilation
+- **Optimizer**: Adam optimizer is used for training.
+- **Loss Function**: Mean Squared Error (MSE) is used to evaluate prediction accuracy.
+
+This architecture is designed to integrate both daily and monthly climate data, effectively capturing spatial and temporal patterns for accurate sea ice concentration prediction.
 
 ## Getting Started
 
@@ -40,39 +61,6 @@ Ensure your data files are in the `data` directory:
 - `monthly_target.npy`
 
 The data files should be preprocessed as described in the code. The script will automatically handle loading and preprocessing.
-
-### 3. Model Training
-
-The model is defined in the `build_model` function, which creates a hybrid architecture of CNN, LSTM, and Transformer blocks. The training process involves:
-
-- **Compiling** the model with the Adam optimizer and mean squared error loss.
-- **Fitting** the model with early stopping and model checkpoint callbacks to save the best-performing model.
-
-
-### 4. Evaluation and Visualization
-
-After training, the script evaluates the model's performance and generates visualizations:
-
-- **Training History:** Plots showing the loss curves for both training and validation sets.
-- **Predictions vs Actuals:** Scatter plots comparing predicted values with actual observations.
-
-## Code Structure
-
-- **Data Loading and Preprocessing:** Handles data loading, scaling, and reshaping.
-- **Model Definition:** Builds a hybrid model with CNN, LSTM, and Transformer layers.
-- **Training and Callbacks:** Includes early stopping and model checkpoint mechanisms.
-- **Visualization:** Plots training history and prediction accuracy.
-
-
-## Results
-
-## Model Performance Comparison
-
-| Models                                                                 | Test RMSE         | Test NRMSE       | Test R² Score |
-|------------------------------------------------------------------------|--------------------|------------------|---------------|
-| Advanced Predictive Modeling using CNN-LSTM with Attention Layers    | 787,587.23        | 0.0651           | 0.9417        |
-| Sea Ice Forecasting using Attention-based Ensemble LSTM                | 818,216.64        | 0.0744           | 0.9400        |
-
 
 
 
