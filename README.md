@@ -7,7 +7,7 @@ This project builds upon the primary sea ice prediction model developed by the B
 ## Key Features
 
 - **Data Handling:** Efficient loading and preprocessing of time series data.
-- **Model Architecture:** A hybrid model combining CNN, LSTM, and Transformer layers for improved forecasting performance.
+- **Model Architecture:** A hybrid model combining CNN, LSTM, and Multi-head Attention layers for improved forecasting performance.
 - **Training and Evaluation:** Includes callbacks for early stopping and saving the best model to prevent overfitting.
 - **Visualization:** Plots for training history and comparison of predictions with actual values.
 
