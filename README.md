@@ -70,5 +70,9 @@ The data files should be preprocessed as described in the code. The script will 
 For any questions or support, please reach out to [zahrasafdari8181@gmail.com](mailto:zahrasafdari8181@gmail.com).
 
 ---
+## License
 
+This project is licensed under the [MIT License](./LICENSE).
+
+---
 Thank you for exploring this project!
